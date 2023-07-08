@@ -5,6 +5,10 @@ const terser = require('gulp-terser');
 const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
 const clean = require('gulp-clean');
+const avif = require('gulp-avif');
+const webp = require('gulp-webp');
+const imagemin = require('gulp-imagemin');
+const cached = require('gulp-cached');
 
 function styles() {
     return src('app/scss/style.scss')
@@ -23,19 +27,30 @@ function scripts() {
     .pipe(browserSync.stream());
 }
 
-function watching() {
-watch(['app/js/index.js'], scripts)
-watch(['app/scss/style.scss'], styles)
-watch(['app/*.html']).on('change', browserSync.reload);
+function images() {
+    return src(['app/images/src/*.*', '!app/images/src/*.svg'])
+    .pipe(avif({quality: 50}))
+
+    .pipe(src(['app/images/src/*.*']))
+    .pipe(webp())
+    
+    .pipe(src(['app/images/src/*.*']))
+    .pipe(imagemin())
+
+    .pipe(dest('app/images/dist'))
 }
 
-function browser() {
+function watching() {
     browserSync.init({
         server: {
             baseDir: "app/"
         }
     });
+watch(['app/js/index.js'], scripts)
+watch(['app/scss/style.scss'], styles)
+watch(['app/*.html']).on('change', browserSync.reload);
 }
+
 
 function building() {
     return src([
@@ -54,9 +69,9 @@ function cleanDist() {
 
 exports.styles = styles;
 exports.scripts = scripts;
-exports.browser = browser;
 exports.watching = watching;
+exports.images = images;
 
 
 exports.build = series(cleanDist, building);
-exports.default = parallel(styles, scripts, browser, watching);
+exports.default = parallel(styles, scripts, watching);
