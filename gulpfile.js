@@ -8,7 +8,7 @@ const clean = require('gulp-clean');
 const avif = require('gulp-avif');
 const webp = require('gulp-webp');
 const imagemin = require('gulp-imagemin');
-const cached = require('gulp-cached');
+const newer = require('gulp-newer');
 
 function styles() {
     return src('app/scss/style.scss')
