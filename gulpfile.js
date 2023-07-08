@@ -29,12 +29,15 @@ function scripts() {
 
 function images() {
     return src(['app/images/src/*.*', '!app/images/src/*.svg'])
+    .pipe(newer('app/images/dist'))
     .pipe(avif({quality: 50}))
 
     .pipe(src(['app/images/src/*.*']))
+    .pipe(newer('app/images/dist'))
     .pipe(webp())
     
     .pipe(src(['app/images/src/*.*']))
+    .pipe(newer('app/images/dist'))
     .pipe(imagemin())
 
     .pipe(dest('app/images/dist'))
@@ -48,6 +51,7 @@ function watching() {
     });
 watch(['app/js/index.js'], scripts)
 watch(['app/scss/style.scss'], styles)
+watch(['app/images/src'], images)
 watch(['app/*.html']).on('change', browserSync.reload);
 }
 
