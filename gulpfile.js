@@ -60,18 +60,18 @@ function sprite() {
 
 function images() {
   return src(['app/images/src/*.*', '!app/images/src/*.svg'])
-    .pipe(newer('app/images/dist'))
+    .pipe(newer('app/images'))
     .pipe(avif({ quality: 50 }))
 
     .pipe(src(['app/images/src/*.*']))
-    .pipe(newer('app/images/dist'))
+    .pipe(newer('app/images'))
     .pipe(webp())
 
     .pipe(src(['app/images/src/*.*']))
-    .pipe(newer('app/images/dist'))
+    .pipe(newer('app/images'))
     .pipe(imagemin())
 
-    .pipe(dest('app/images/dist'));
+    .pipe(dest('app/images'));
 }
 
 function watching() {
@@ -90,8 +90,8 @@ function watching() {
 function building() {
   return src(
     [
-      'app/images/dist/*.*',
-      '!app/images/dist/*.svg',
+      'app/images/*.*',
+      '!app/images/*.svg',
       'app/images/sprite.svg',
       'app/fonts/*.*',
       'app/js/*.min.js',
