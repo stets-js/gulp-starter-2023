@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 610 610" version="1.1">
+  <g id="layer4" transform="translate(5 -397.36)">
+    <rect id="rect5840" stroke-linejoin="round" ry="1.5381" height="600" width="600" stroke="#4a0" y="402.36" x="0" stroke-width="10" fill="none"/>
+    <path id="path5587" d="m313.34 61.062c-127.77 0-231.31 103.55-231.31 231.31 0 127.77 103.55 231.31 231.31 231.31 14.887 0 29.345-1.4267 43.438-4.125l6.6875 37.312 49.719-41.25 49.125-41.875-60.531-22.188-60.719-21.812 7.4688 43.406c-11.366 2.2058-23.165 3.3438-35.188 3.3438-101.72 0-184.16-82.408-184.16-184.12 0-101.72 82.439-184.16 184.16-184.16 105.85 10.185 176.75 78.849 175.33 152.5-0.8125 54.011-21.411 87.552-78.357 89.795v-171.32h-43.156v29.438c-12.512-22.419-45.905-34.292-67.75-34.469-29.229 0.00024-53.102 10.571-71.562 31.938-18.461 21.366-27.813 49.22-27.812 83.406-0.00016 34.186 9.5228 62.04 27.812 83.406 18.46 21.195 42.162 31.438 71.562 31.438 22.547-0.32018 59.365-14.59 66.844-31.125l0.90625 32.5c132.64 4.24 174.2-70.71 175.09-143.45-1.04-120.74-117.55-201.57-228.91-201.22zm-4.8438 160.5c15.383 0.00021 27.409 6.1141 36.469 18.25 9.2299 11.965 14.125 28.536 14.125 49.219-0.00029 20.854-4.5973 37.381-13.656 49.688-9.0597 12.136-21.256 18.219-36.469 18.219-15.384 0.00008-27.41-6.0826-36.469-18.219-8.8886-12.136-13.688-28.663-13.688-49.688-0.00029-20.682 4.7989-37.253 13.688-49.219 9.0591-12.136 20.958-18.25 36-18.25z" fill="#4a0" transform="translate(-5 397.36)" fill-opacity=".76863"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Eco green Web icon</dc:title>
+        <dc:date>2013-08-22T20:41:51</dc:date>
+        <dc:description/>
+        <dc:source>http://openclipart.org/detail/182128/eco-green-web-by-dominiquechappard-182128</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>dominiquechappard</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>ecology</rdf:li>
+            <rdf:li>green</rdf:li>
+            <rdf:li>recycling</rdf:li>
+            <rdf:li>web</rdf:li>
+            <rdf:li>world wide web</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
