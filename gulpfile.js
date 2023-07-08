@@ -57,7 +57,7 @@ watch(['app/*.html']).on('change', browserSync.reload);
 
 
 function building() {
-    return src([
+    return src(['app/images/dist/*.*',
         'app/js/*.min.js',
         'app/css/*.min.css',
         'app/*.html'
